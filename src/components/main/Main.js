@@ -4,20 +4,22 @@ import Theme from '../../contexts/ThemeContext';
 
 export default class Main extends Component {
     static contextType = Theme;
-    
+
     render() {
         return (
             <main className="main-section d-flex flex-column gap-5">
-                <div className={`position-relative d-flex shadow-sm align-items-center logo-bg-${this.context.theme} justify-content-center rounded-circle logo`}>
-                    <div className={`w-100 position-absolute border border-2 first ${this.context.theme === 'light' ? 'border-primary': 'border-white'}`}></div>
-                    <div className={`w-100 position-absolute border border-2 second ${this.context.theme === 'light' ? 'border-primary': 'border-white'}`}></div>
+                <div
+                    className={`position-relative d-flex shadow-sm align-items-center logo-bg-${this.context.theme} justify-content-center rounded-circle logo`}
+                >
+                    <div className="w-100 position-absolute switch-border border border-2 first"></div>
+                    <div className="w-100 position-absolute switch-border border border-2 second"></div>
                 </div>
                 <h1 className="display-2 fw-medium">
                     Hello.
                     <br />
                     My name is Kevin
                 </h1>
-                <div className={`w-25 my-4 border ${this.context.theme === 'light' ? 'border-primary': 'border-white'}`}></div>
+                <div className="w-25 my-4 switch-border border"></div>
                 <p>
                     I'm a Digital Product and UI Designer – creating digital experiences that are intuitive for real people and making
                     complex processes easy to use.

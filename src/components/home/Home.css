@@ -21,12 +21,21 @@
 
     main {
         background-color: white !important;
+
+        .switch-border {
+            border-color: blue !important;
+        }
     }
 }
 
 .theme-dark {
     * {
         color: white;
+    }
+
+    ::selection {
+        background-color: white;
+        color: black;
     }
 
     header {
@@ -36,6 +45,10 @@
 
     main {
         background-color: black;
+
+        .switch-border {
+            border-color: white;
+        }
 
         a {
             text-decoration: underline;
