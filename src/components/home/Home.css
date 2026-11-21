@@ -1,0 +1,44 @@
+.home-screen {
+    min-height: 100vh;
+}
+
+.left-side {
+    clip-path: inset(0 65% 0 0);
+}
+
+.right-side {
+    clip-path: inset(0 0 0 35%);
+}
+
+.theme-light {
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        background-color: white !important;
+    }
+
+    main {
+        background-color: white !important;
+    }
+}
+
+.theme-dark {
+    * {
+        color: white;
+    }
+
+    header {
+        background-color: grey;
+        border-color: grey !important;
+    }
+
+    main {
+        background-color: black;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}

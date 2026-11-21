@@ -1,0 +1,12 @@
+.wrapper {
+    width: 40px;
+
+    div {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+a {
+    text-decoration: none;
+}

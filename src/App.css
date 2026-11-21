@@ -1,0 +1,12 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    box-sizing: border-box;
+}
+
+.whole {
+    min-height: 100vh !important;
+    background-color: grey;
+}
